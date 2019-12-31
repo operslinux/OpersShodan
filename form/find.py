@@ -49,9 +49,7 @@ def OpcionShoda():
             Carga()
             SearchFtp()
 
-        else:
-            print(Fore.RED + "[SALIENDO]")
-            LogoTwo()
+        
     except:
         print(Fore.RED + "[ERROR]", "Debes colocar una opcion valida EJECUTA de nuevo el programa")
 
@@ -118,12 +116,14 @@ def Abrirweb():
     print("Comprobando si los archivos exiten")
     if os.path.isfile('results.txt') == True:
         txt = open('results.txt', 'r')
-        for linea in txt:
-            url = (linea)
-            webbrowser.open(url, new=2, autoraise=True)
-            input("Presiona enter para continuar....")
-        txt.close()
+        try:
+            for linea in txt:
+                url = (linea)
+                webbrowser.open(url, new=2, autoraise=True)
+                input("Presiona enter para continuar....")
+        except shodan.APIError as e:
+            print('Error: {}'.format(e))
+            
     else:
         print("El archivo No existe")
-
 
