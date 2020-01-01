@@ -36,6 +36,9 @@ $ git clone https://github.com/operslinux/Opers-Shodan.git
 ```
 $ cd Opers-Shodan
 ```
+```
+$ sudo chmod +x run.py
+```
 
 # [ Setup ]
 ```
