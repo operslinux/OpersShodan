@@ -80,7 +80,7 @@ def MenuDatos():
         if i == 4:
             print(i, Menus[6])
 
-def Body():
+def main():
     Comprobacion()
     MenuLogin()
     try:
@@ -96,7 +96,7 @@ def Body():
             else:
                 Limpiar()
                 print(Fore.YELLOW + "El archivo API.txt NO existe")
-                Body()
+                main()
 
         elif Lopcion == 2:
             Ipsho = input(Fore.YELLOW + "Coloca Tu API DE SHODAN\n [ Opers Linux ] > ")
@@ -114,11 +114,11 @@ def Body():
 
     except:
         print(Fore.RED + "[Error]", "Debes colocar una Opcion Valida Intenta de nuevo ")
-        Body()
+        main()
 
 
-def Run():
-    Body()
 
 
-Run()
+
+if __name__ == '__main__':
+    main()
