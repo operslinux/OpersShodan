@@ -35,7 +35,7 @@ def MenuInicial():
     sleep(1.5)
     sleep(0.60)
     Carga()
-    print(Fore.GREEN + "\t\tBienvenido a FACEBOOK-CONNECT BY OPERS LINUX\t\t")
+    print(Fore.GREEN + "\t\tBienvenido a OPers Shodan BY OPERS LINUX\t\t")
     print("\t\t__________________________\t\t")
 
 #comprobacion verificara que la carpeta exista junto con car,limpiar y animacion
