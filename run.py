@@ -16,29 +16,28 @@ def Carga():
         loop.set_description("Loading .....".format(k))
         loop.update(1)
     loop.close()
-def Limpiar():
-	if os.name == 'nt':
-		os.system('cls')
-	else:
-		os.system('clear')
-def Animacion():
+
+def MenuInicial():
+    os.system('clear')
     LogoCero()
     sleep(0.7)
-    Limpiar()
+    os.system('clear')
     sleep(0.3)
     LogoCero()
     sleep(0.3)
-    Limpiar()
+    os.system('clear')
     sleep(0.3)
     LogoOne()
     sleep(0.3)
-    Limpiar()
+    os.system('clear')
     sleep(0.3)
-    Limpiar()
-    sleep(0.2)
-    LogoCero()
     LogoCero()
     sleep(1.5)
+    sleep(0.60)
+    Carga()
+    print(Fore.GREEN + "\t\tBienvenido a FACEBOOK-CONNECT BY OPERS LINUX\t\t")
+    print("\t\t__________________________\t\t")
+
 #comprobacion verificara que la carpeta exista junto con car,limpiar y animacion
 def Comprobacion():
     Carga()
