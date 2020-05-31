@@ -22,6 +22,10 @@ busquedas de SHODAN
 ```
 
 <a href="https://imgflip.com/gif/3kr8e2"><img src="https://i.imgflip.com/3kr8e2.gif" title="made at imgflip.com"/></a>
+```
+Kali LInux
+Parrot OS
+```
 
 # [Instalacion]
 ```
