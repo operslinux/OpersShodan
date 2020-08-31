@@ -18,7 +18,7 @@ def Carga():
         loop.update(1)
     loop.close()
 
-def MenuInicial():
+def Animacion():
     os.system('clear')
     LogoCero()
     sleep(0.7)
